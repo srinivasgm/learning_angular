@@ -1,0 +1,19 @@
+<div class="container" >
+<hr>
+<input type="text" class="form-control" [(ngModel)]="username">
+
+<hr>
+
+<p>username:  {{username}}</p>
+
+<!-- <button class="btn btn-primary" (click)=""></button> -->
+
+<button class="btn" [ngClass]="{valid:username.length>3}" *ngIf="username.length!=0;else invalidusername " (click)="resetName()">Reset</button>
+<button class="btn" [ngStyle]="{color:'red'}">Button</button>
+
+
+<input type="text" [ngStyle]="{borderColor:'red'}">
+<ng-template #invalidusername>
+    username not entered
+</ng-template>
+</div>

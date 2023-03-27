@@ -1,0 +1,17 @@
+<div class="container">
+    <hr>
+<p>Home page</p>
+
+<input type="text" (input)="onInputChange($event)">
+<hr>
+<input type="text" [(ngModel)]="valueInput">
+<section>It is Lorem ipsum dolor sit amet consectetur adipisicing elit.</section>
+
+<button (mouseover)="onClickButton()"class="btn btn-primary btn-outline">Click</button> <br>
+
+
+{{isClicked}}
+
+{{valueInput}}
+
+</div>

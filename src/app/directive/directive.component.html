@@ -1,0 +1,12 @@
+<div class="container">
+    <hr>
+    <button class="btn btn-primary" (click)="logClicks()">Display Details</button>
+    <hr>
+   <p *ngIf="isClicked">Secret password</p>
+
+   <hr>
+
+   <p *ngFor="let click of clicks;let i=index" [ngStyle]="{backgroundColor:i>=5?'blue':'white'}" [ngClass]="{log:i>=5}">{{click}}</p>
+  
+</div>
+
